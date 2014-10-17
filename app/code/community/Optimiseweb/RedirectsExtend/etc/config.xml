@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* @package    Optimiseweb_RedirectsExtend
+* @author     Kathir Vel (sid@optimiseweb.co.uk)
+* @copyright  Copyright (c) 2014 Optimise Web
+* @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+-->
+<config>
+
+    <modules>
+        <Optimiseweb_RedirectsExtend>
+            <version>0.1.1</version>
+        </Optimiseweb_RedirectsExtend>
+    </modules>
+
+    <frontend>
+        
+        <translate>
+            <modules>
+                <Optimiseweb_RedirectsExtend>
+                    <files>
+                        <default>Optimiseweb_RedirectsExtend.csv</default>
+                    </files>
+                </Optimiseweb_RedirectsExtend>
+            </modules>
+        </translate>
+        
+    </frontend>
+
+    <adminhtml>
+
+        <translate>
+            <modules>
+                <Optimiseweb_RedirectsExtend>
+                    <files>
+                        <default>Optimiseweb_RedirectsExtend.csv</default>
+                    </files>
+                </Optimiseweb_RedirectsExtend>
+            </modules>
+        </translate>
+        
+    </adminhtml>
+
+    <global>
+
+        <blocks>
+            <ow_redirects_extend>
+                <class>Optimiseweb_RedirectsExtend_Block</class>
+            </ow_redirects_extend>
+        </blocks>
+
+        <helpers>
+            <ow_redirects_extend>
+                <class>Optimiseweb_RedirectsExtend_Helper</class>
+            </ow_redirects_extend>
+        </helpers>
+
+        <models>
+            <ow_redirects_extend>
+                <class>Optimiseweb_RedirectsExtend_Model</class>
+            </ow_redirects_extend>
+        </models>
+        
+        <events>
+            <!--
+            <optimiseweb_redirects_before_legacy>
+                <observers>
+                    <optimiseweb_redirects_extend_before_legacy>
+                        <type>singleton</type>
+                        <class>ow_redirects_extend/observer</class>
+                        <method>beforeLegacy</method>
+                    </optimiseweb_redirects_extend_before_legacy>
+                </observers>
+            </optimiseweb_redirects_before_legacy>
+            -->
+            <!--
+            <optimiseweb_redirects_before_v1>
+                <observers>
+                    <optimiseweb_redirects_extend_before_v1>
+                        <type>singleton</type>
+                        <class>ow_redirects_extend/observer</class>
+                        <method>beforeVersionOne</method>
+                    </optimiseweb_redirects_extend_before_v1>
+                </observers>
+            </optimiseweb_redirects_before_v1>
+            -->
+            <!--
+            <optimiseweb_redirects_before_query_strings>
+                <observers>
+                    <optimiseweb_redirects_extend_before_query_strings>
+                        <type>singleton</type>
+                        <class>ow_redirects_extend/observer</class>
+                        <method>beforeQueryStrings</method>
+                    </optimiseweb_redirects_extend_before_query_strings>
+                </observers>
+            </optimiseweb_redirects_before_query_strings>
+            -->
+            <!--
+            <optimiseweb_redirects_before_catalogue_search>
+                <observers>
+                    <optimiseweb_redirects_extend_before_catalogue_search>
+                        <type>singleton</type>
+                        <class>ow_redirects_extend/observer</class>
+                        <method>beforeCatalogueSearch</method>
+                    </optimiseweb_redirects_extend_before_catalogue_search>
+                </observers>
+            </optimiseweb_redirects_before_catalogue_search>
+            -->
+            <!--
+            <optimiseweb_redirects_before_exiting>
+                <observers>
+                    <optimiseweb_redirects_extend_before_exiting>
+                        <type>singleton</type>
+                        <class>ow_redirects_extend/observer</class>
+                        <method>beforeExiting</method>
+                    </optimiseweb_redirects_extend_before_exiting>
+                </observers>
+            </optimiseweb_redirects_before_exiting>
+            -->
+        </events>
+
+    </global>
+    
+</config>
